@@ -37,6 +37,30 @@ npx react-native init MyApp --template react-native-template-expo-full
 | @react-navigation  | 5.12.8  | :white_check_mark:  | :white_check_mark:  |   |
 | axios  |  0.21 | :white_check_mark:  | :white_check_mark:  |   |
 | @react-native-async-storage  | 1.15.1  | :white_check_mark:  | :white_check_mark:  |   |
+| react-native-svg  | 12.1.1  | :white_check_mark:  | :white_check_mark:  |   |
+| expo-ads-admob  | 10.0.4  | :white_check_mark:  | :white_check_mark:  |   |
+| react-native-firebase (analytics,auth,messaging)  | ....  | :white_check_mark:  |   |   |
+| react-native-modal  | ....  | :white_check_mark:  | :white_check_mark:  |   |
+| react-native-webview  | ....  | :white_check_mark:  | :white_check_mark:  |   |
+| react-native-modalize  | ....  | :white_check_mark:  | :white_check_mark:  |   |
+| react-native-fast-image  | ....  | :white_check_mark:  | :white_check_mark:  |   |
+| @react-native-google-signin  | ....  | :white_check_mark:  | :white_check_mark:  |   |
+| expo-facebook  | 11.0.5  | :white_check_mark:  | :white_check_mark:  |   |
+| expo-font  | 11.0.5  | :white_check_mark:  | :white_check_mark:  |   |
+| expo-av  | 11.0.5  | :white_check_mark:  | :white_check_mark:  |   |
+
+## Setup
+### 1. expo-ads-admob
+- cd android/app/src/main/AndroidManifest.xml
+- change "ca-app-pub-xxxxxxxxxxxxxxxx~yyyyyyyyyy" with admod ID
+
+### 2. react-native-firebase
+- Update google-services.json file
+- cd android && ./gradlew signingReport & update key to firebase
+
+### 3. expo-facebook
+- cd android/app/src/main/AndroidManifest.xml
+- change android:value="fb0"
 
 ## :computer: Contributing
 
